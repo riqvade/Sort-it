@@ -142,7 +142,7 @@ public class SortManager<T extends Comparable> {
                 newValue = null;
             }
             if (newValue != null && (newValue.compareTo(values.get(preferredIndex)) > 0 == sortMode)) {
-                System.out.println("Warning: file "+preferredIndex+" has incorrect sorting.");
+                System.out.printf("Warning: file %d has incorrect sorting.%n", preferredIndex);
                 values.put(preferredIndex, null);
             } else {
                 values.put(preferredIndex, newValue);
